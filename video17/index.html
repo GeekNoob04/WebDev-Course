@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selecotrs</title>
+
+    <style>
+        /* element selector */
+        /* div{
+            background-color: red;
+        } */
+
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+
+        /* child selector */
+        div>p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /* descendant selector */
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /* universe selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */   
+        a:visited{
+            color: black;
+        }
+
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    
+    <div class="red">
+        I am a div
+        <article>
+            <p>I am a para inside div</p>
+        </article>
+       
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.youtube.com">Go to youtube</a>
+    <a href="https://www.monkeytype.com">Go to monkey type</a>
+</body>
+</html>

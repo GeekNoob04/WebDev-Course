@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Position</title>
+    <style>
+        .container{
+            width: 466px;
+            height: 488px;
+            border: 2px solid black;
+            background-position: center center;
+            background-image: url(https://mediaim.expedia.com/destination/1/29dbe05be677c55e8a8ed126c997ea49.jpg);
+        }
+        img{
+            width: 466px;
+            height: 488px;
+            object-fit: contain;
+            /* object-fit: fill; */
+            object-position: 10px 20px;
+            /* object-position: bottom left; */
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://mediaim.expedia.com/destination/1/29dbe05be677c55e8a8ed126c997ea49.jpg" alt=""> -->
+    </div>
+</body>
+</html>
